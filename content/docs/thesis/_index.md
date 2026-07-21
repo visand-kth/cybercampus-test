@@ -13,8 +13,8 @@ After selecting a study topic, [develop](proposal) your proposal.
 
 ## AI Security
 
-- [**Red Teaming AI Systems**](open/26-05-red-teaming-ai-systems)
-- [**LLM-Assisted Penetration Testing**](open/26-06-llm-assisted-pentesting)
+- [Red Teaming AI Systems](open/26-05-red-teaming-ai-systems)
+- [LLM-Assisted Penetration Testing](open/26-06-llm-assisted-pentesting)
 <!-- - [**LLM Hacking (Prompt Injection)**](open/24-08-llm-prompt-injection) -->
 <!-- - [LLM Jailbreaking](open/24-11-llm-escaping-rlhf-protection) -->
 <!-- - [Discovering Software Vulnerabilities with LLMs](open/24-16-llm-hacking-software) -->
@@ -26,7 +26,7 @@ After selecting a study topic, [develop](proposal) your proposal.
 
 ## Threat Intelligence & Digital Forensics  
 
-- [**LLM-Powered Honeypots**](open/25-02-llm-honeypot)
+- [LLM-Powered Honeypots](open/25-02-llm-honeypot)
 - [National Cyber Threat Intelligence](open/24-04-cyber-threat-intelligence)
 - [Post-Travel Device Forensics](open/25-03-post-travel-forensics)
 <!-- - [Memory Forensics](open/24-01-memory-forensics) -->

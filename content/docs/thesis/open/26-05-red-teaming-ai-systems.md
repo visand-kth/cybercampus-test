@@ -1,7 +1,7 @@
 ---
-weight: 2
 title: Red Teaming AI Systems
-description: Large Language Models and LLM-powered applications introduce a new attack surface. This thesis topic covers offensive security research against AI systems themselves—prompt injection, jailbreaking and RLHF bypass, vulnerabilities in GPTs and plugins, and malicious models in public repositories. The guiding question is: how can we break LLMs and LLM-powered systems?
+description: Large Language Models and LLM-powered applications introduce a new attack surface. This thesis topic covers offensive security research against AI systems themselves—prompt injection, jailbreaking and RLHF bypass, vulnerabilities in GPTs and plugins, and malicious models in public repositories. The guiding question is, how can we break LLMs and LLM-powered systems?
+weight: 2
 bookFlatSection: true
 bookHidden: true
 ---
