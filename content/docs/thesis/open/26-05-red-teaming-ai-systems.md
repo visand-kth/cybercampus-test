@@ -10,7 +10,7 @@ bookHidden: true
 
 - **Thesis ID:** 24-08
 - **Research Proposal:** Offensive Security Research Against Large Language Models and LLM-Powered Systems
-- **Former topic IDs:** 24-08 (prompt injection), 24-11 (jailbreaking / RLHF bypass), 24-09 (GPTs and plugins), 24-10 (malicious models)
+- **Supervisor:** Dr. Emre Süren
 
 ## Abstract
 

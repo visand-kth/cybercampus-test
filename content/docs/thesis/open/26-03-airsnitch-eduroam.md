@@ -15,8 +15,9 @@ draft: false
   - You should have experience with at least one of: Linux networking, Wi-Fi/802.11 fundamentals, packet analysis, or wireless testbed setup.
   - Supervisor must obtain written authorization from the university (IT/network administration) and have a documented scope for the test (no impact to other users).
   - Experiments must use only your own devices and dedicated test accounts/traffic patterns; do not capture or interfere with other users' data.
-  - All findings must be reported responsibly (including potential mitigations and vendor/network feedback where appropriate).
-
+  - All findings must be reported responsibly (including potential mitigations and vendor/network feedback where app
+- **Supervisor:** Dr. Emre Süren
+  
 ## Abstract
 
 Client isolation (also called AP isolation) is widely deployed in Wi-Fi networks to prevent malicious clients from attacking other clients connected to the same network. AirSnitch (NDSS 2026) demonstrates that these isolation guarantees are not consistent across real-world deployments, because weaknesses exist across multiple Wi-Fi layers and their cross-layer interactions. Building on AirSnitch, this thesis will assess whether and how client isolation can be bypassed on the university `eduroam` network, under explicit authorization. The student is expected to attempt the paper's bypass primitives in a controlled manner using only their own devices, to evaluate feasibility, quantify impact, and produce mitigation recommendations for defenders.

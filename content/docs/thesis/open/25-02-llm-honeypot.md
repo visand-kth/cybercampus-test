@@ -12,6 +12,7 @@ draft: false
 - **Thesis ID:** 25-02
 - **Research Proposal:** Developing LLM-Powered Honeypots for Next-Generation Cyber Threat Detection
 - **Collaboration company/organization:** -
+- **Supervisor:** Dr. Emre Süren
 
 ## Abstract
 

@@ -17,6 +17,7 @@ draft: false
     - Firmware extraction or static/dynamic analysis of embedded Linux or Android-based devices
     - Mobile/IoT application reverse engineering
   - You are expected to conduct authorized experiments only within lab-controlled or explicitly permitted environments; do not test on production meeting room deployments without written approval
+- **Supervisor:** Dr. Emre Süren
 
 ## Abstract
 

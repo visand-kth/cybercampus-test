@@ -10,6 +10,7 @@ bookHidden: true
 
 - **Thesis ID:** 24-04
 - **Research Proposal:** Enhancing National Cyber Threat Intelligence for Sweden Using AI-Based Technologies
+- **Supervisor:** Dr. Emre Süren
 
 ## Abstract
 

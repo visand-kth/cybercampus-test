@@ -36,6 +36,7 @@ After selecting a study topic, [develop](proposal) your proposal.
 
 ## Vulnerability Research
 
+- [Penetration Testing](nse/guidelines)  
 - [IoT Hacking - General](open/24-00-hacking-iot)  
 - [Hacking Smart Meeting Rooms](open/26-04-hacking-smart-meeting-rooms)
 - [Wi-Fi Client Isolation Bypass](open/26-03-airsnitch-eduroam)

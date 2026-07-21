@@ -11,6 +11,7 @@ bookHidden: true
 - **Thesis ID:** 24-02
 - **Research Proposal:** Vulnerability Research of Offpad Fingerprint-Based Authentication Solution by PONE Biometrics
 - **Collaboration company/organization:** [PONE Biometrics](https://ponebiometrics.com/)
+- **Supervisor:** Dr. Emre Süren
 
 ## Abstract
 

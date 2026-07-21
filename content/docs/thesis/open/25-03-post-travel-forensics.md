@@ -12,6 +12,7 @@ draft: false
 - **Thesis ID:** 25-03
 - **Research Proposal:** Post-Travel Device Forensics: Developing a Procedure to Detect Tampering and Compromise After Border Crossings
 - **Collaboration company/organization:** -
+- **Supervisor:** Dr. Emre Süren
 
 ## Abstract
 

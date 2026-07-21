@@ -25,7 +25,8 @@ bookHidden: true
     - Firmware
     - Radio
   - Regardless of the device you selected, you are welcome to expand scope with web, mobile, network, and cloud attack surfaces
-  
+ - **Supervisor:** Dr. Emre Süren
+ 
 ## Abstract
 
 The proliferation of Internet of Things (IoT) devices has transformed industries and everyday life by enabling seamless connectivity and automation. However, the rapid adoption of these devices has outpaced the development of robust security measures, leaving IoT devices vulnerable to a wide array of cyber threats. This research aims to systematically identify and analyze vulnerabilities in IoT devices, assess their potential impacts on users and networks, and propose effective mitigation strategies. By improving the security of IoT devices, this study seeks to safeguard against the growing threat landscape and contribute to the overall security of connected environments.
