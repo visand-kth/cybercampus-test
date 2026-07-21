@@ -11,14 +11,16 @@ We supervise students to perform thesis studies in our lab.
 Below is a list of available research topics. 
 After selecting a study topic, [develop](proposal) your proposal.
 
-## AI Red Teaming
+## AI Security
 
-- [**LLM Hacking (Prompt Injection)**](open/24-08-llm-prompt-injection)
-- [LLM Jailbreaking](open/24-11-llm-escaping-rlhf-protection)
-- [Discovering Software Vulnerabilities with LLMs](open/24-16-llm-hacking-software)
-- [Discovering Vulnerabilities in GPTs and Plugins](open/24-09-llm-hacking-gpts)
-- [Secure Vibe Coding](open/25-04-secure-vibe-coding)
-- [Identifying Malicious Models](open/24-10-llm-malicious-models)
+- [**Red Teaming AI Systems**](open/26-05-red-teaming-ai-systems)
+- [**LLM-Assisted Penetration Testing**](open/26-06-llm-assisted-pentesting)
+<!-- - [**LLM Hacking (Prompt Injection)**](open/24-08-llm-prompt-injection) -->
+<!-- - [LLM Jailbreaking](open/24-11-llm-escaping-rlhf-protection) -->
+<!-- - [Discovering Software Vulnerabilities with LLMs](open/24-16-llm-hacking-software) -->
+<!-- - [Discovering Vulnerabilities in GPTs and Plugins](open/24-09-llm-hacking-gpts) -->
+<!-- - [Identifying Malicious Models](open/24-10-llm-malicious-models) -->
+<!-- - [Secure Vibe Coding](open/25-04-secure-vibe-coding) -->
 <!-- - [Building Cybersecurity LLMs](open/24-18-llm-cybersecurity)  -->
 <!-- - [Building Air-Gapped LLMs](open/24-12-llm-air-gap) -->
 
@@ -38,7 +40,7 @@ After selecting a study topic, [develop](proposal) your proposal.
 - [Hacking Smart Meeting Rooms](open/26-04-hacking-smart-meeting-rooms)
 - [Wi-Fi Client Isolation Bypass](open/26-03-airsnitch-eduroam)
 - [IoT Hacking - Pone Biometrics Offpad](open/24-02-hacking-pone-biometrics-offpad)
-- [Connected Car Hacking](open/24-03-hacking-connected-cars)
+<!-- - [Connected Car Hacking](open/24-03-hacking-connected-cars) -->
 <!-- - [Smart Home Hacking](open/24-07-hacking-smart-home) -->
 <!-- - [Mobile App Hacking](open/24-06-hacking-applications) -->
 <!-- - [IoT Hacking - Connected Charging Stations](open/24-13-hacking-connected-charging-stations) -->
@@ -50,4 +52,3 @@ After selecting a study topic, [develop](proposal) your proposal.
 ## Interesting Topics
 
 You are also welcome to propose your own research topic. We are particularly open to original ideas involving LLMs.
-

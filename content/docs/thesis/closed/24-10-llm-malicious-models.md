@@ -4,9 +4,12 @@ description: Large Language Models (LLMs) have transformed the landscape of natu
 weight: 2
 bookFlatSection: true
 bookHidden: true
+draft: true
 ---
 
 # LLM Malicious Models
+
+> **Archived.** Merged into [Red Teaming AI Systems](../24-08-red-teaming-ai-systems). Malicious models remain a focus angle there.
 
 - **Thesis ID:** 24-10
 - **Research Proposal:** Identifying Malicious Models in Large Language Model (LLM) Repositories

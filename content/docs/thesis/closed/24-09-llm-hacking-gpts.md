@@ -4,9 +4,12 @@ description: Large Language Models (LLMs) like GPT-3 and GPT-4 have transformed 
 weight: 2
 bookFlatSection: true
 bookHidden: true
+draft: true
 ---
 
 # LLM Hacking GPTs
+
+> **Archived.** Merged into [Red Teaming AI Systems](../24-08-red-teaming-ai-systems). GPTs and plugins remain a focus angle there.
 
 - **Thesis ID:** 24-09
 - **Research Proposal:** Vulnerability Research of Large Language Models (LLMs): Discovering Vulnerabilities in GPTs and Their Plugins

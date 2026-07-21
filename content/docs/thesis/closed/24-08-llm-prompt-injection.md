@@ -4,9 +4,12 @@ title: LLM Prompt Injection
 description: Large Language Models (LLMs) have revolutionized the field of natural language processing, providing advanced capabilities in language understanding and generation. However, the increasing reliance on these models introduces new cybersecurity challenges. This research aims to investigate the vulnerabilities associated with LLMs, specifically focusing on prompt injection attacks using the Swedish language. By analyzing the security weaknesses and potential exploits in LLMs, the study aims to enhance the understanding of LLM vulnerabilities and propose mitigation strategies.
 bookFlatSection: true
 bookHidden: true
+draft: true
 ---
 
 # LLM Prompt Injection
+
+> **Archived.** Merged into [Red Teaming AI Systems](../24-08-red-teaming-ai-systems). Prompt injection remains a focus angle there.
 
 - **Thesis ID:** 24-08
 - **Research Proposal:** Vulnerability Research of Large Language Models (LLMs): Focus on Prompt Injection Using the Swedish Language

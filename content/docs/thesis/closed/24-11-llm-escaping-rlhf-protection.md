@@ -4,9 +4,12 @@ description: Large Language Models (LLMs) such as GPT-3 and GPT-4, often enhance
 weight: 2
 bookFlatSection: true
 bookHidden: true
+draft: true
 ---
 
 # LLM Escaping RLHF Protections
+
+> **Archived.** Merged into [Red Teaming AI Systems](../24-08-red-teaming-ai-systems). Jailbreaking / RLHF bypass remains a focus angle there.
 
 - **Thesis ID:** 24-11
 - **Research Proposal:** Escaping Reinforcement Learning from Human Feedback (RLHF) Protections in Large Language Models (LLMs)

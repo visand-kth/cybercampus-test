@@ -4,9 +4,12 @@ description: The rapid advancement in artificial intelligence, particularly in t
 weight: 2
 bookFlatSection: true
 bookHidden: true
+draft: true
 ---
 
 # Hacking with LLMs
+
+> **Archived.** Refocused as [LLM-Assisted Penetration Testing](../24-16-llm-assisted-pentesting). Primary scope is now web applications.
 
 - **Thesis ID:** 24-16
 - **Research Proposal:** Discovering and Exploiting Software Vulnerabilities Using Large Language Models (LLMs)
