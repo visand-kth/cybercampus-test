@@ -46,7 +46,7 @@ Select your devices and then fill out the form [here](apply-resource).
   function getSection(section, columns) {
   
     const stmt = db.prepare(
-      `SELECT ${columnList} FROM resources WHERE section = ?`
+      `SELECT ${columns} FROM resources WHERE section = ?`
     );
     stmt.bind([section]);
   
