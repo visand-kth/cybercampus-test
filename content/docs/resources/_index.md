@@ -31,12 +31,13 @@ Select your devices and then fill out the form [here](apply-resource).
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.3/sql-wasm.js"></script>
 <script>
-    
-  const response = await fetch('resources.db');
-  const buffer = await response.arrayBuffer();
-  const db = new SQL.Database(new Uint8Array(buffer));
 
   async function getSection(section) {
+    
+    const response = await fetch('resources.db');
+    const buffer = await response.arrayBuffer();
+    const db = new SQL.Database(new Uint8Array(buffer));
+    
     const SQL = await initSqlJs({
       locateFile: file => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.3/${file}`
     });
