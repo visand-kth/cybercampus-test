@@ -13,22 +13,36 @@ Select your devices and then fill out the form [here](apply-resource).
 
 ## IoT devices
 
-<div id="output"></div>
+<div id="IoT devices"></div>
+
+## Hacking tools
+
+<div id="Hacking tools"></div>
+
+## Hardware
+
+<div id="Hardware"></div>
+
+## Other
+
+<div id="Other"></div>
+
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.3/sql-wasm.js"></script>
 <script>
-  async function main() {
+    
+  const response = await fetch('resources.db');
+  const buffer = await response.arrayBuffer();
+  const db = new SQL.Database(new Uint8Array(buffer));
+
+  async function getSection(section) {
     const SQL = await initSqlJs({
       locateFile: file => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.3/${file}`
     });
+    const result = db.exec(`SELECT section, name, availability, diva_references FROM resources WHERE section == ${section}`);
 
-    const response = await fetch('resources.db');
-    const buffer = await response.arrayBuffer();
-    const db = new SQL.Database(new Uint8Array(buffer));
-
-    const result = db.exec('SELECT section, category, name, availability, diva_references FROM resources WHERE section == "IoT devices"');
-
-    const output = document.getElementById('output');
+    const output = document.getElementById(section);
     if (result.length > 0) {
       const { columns, values } = result[0];
       let html = '<table><tr>' + columns.map(c => `<th>${c}</th>`).join('') + '</tr>';
@@ -40,5 +54,8 @@ Select your devices and then fill out the form [here](apply-resource).
     }
   }
 
-  main();
+  getSection("IoT devices");
+  getSection("Hacking tools");
+  getSection("Hardware");
+  getSection("Other");
 </script>
