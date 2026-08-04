@@ -51,13 +51,13 @@ Select your devices and then fill out the form [here](apply-resource).
     stmt.bind([section]);
   
     const output = document.getElementById(section);
-    let html = '<table><tr>' + safeColumns.map(c => `<th>${c}</th>`).join('') + '</tr>';
+    let html = '<table><tr>' + columns.map(c => `<th>${c}</th>`).join('') + '</tr>';
     let hasRows = false;
   
     while (stmt.step()) {
       hasRows = true;
       const row = stmt.getAsObject();
-      html += '<tr>' + safeColumns.map(c => `<td>${row[c]}</td>`).join('') + '</tr>';
+      html += '<tr>' + columns.map(c => `<td>${row[c]}</td>`).join('') + '</tr>';
     }
     stmt.free();
   
