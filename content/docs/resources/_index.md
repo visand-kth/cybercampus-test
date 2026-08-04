@@ -51,7 +51,7 @@ Select your devices and then fill out the form [here](apply-resource).
     stmt.bind([section]);
   
     const output = document.getElementById(section);
-    let html = '<table><tr>' + columns.map(c => `<th>${c}</th>`).join('') + '</tr>';
+    let html = '<table><tr>' + columns.map(c => `<th>${(c.charAt(0).toUpperCase() + c.slice(1).).replace('_',' ')}</th>`).join('') + '</tr>';
     let hasRows = false;
   
     while (stmt.step()) {
