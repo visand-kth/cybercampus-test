@@ -43,20 +43,21 @@ Select your devices and then fill out the form [here](apply-resource).
     db = new SQL.Database(new Uint8Array(buffer));
   }
   
-  function getSection(section) {
+  function getSection(section, columns) {
+  
     const stmt = db.prepare(
-      `SELECT section, name, availability, diva_references FROM resources WHERE section = ?`
+      `SELECT ${columnList} FROM resources WHERE section = ?`
     );
     stmt.bind([section]);
   
     const output = document.getElementById(section);
-    let html = '<table><tr><th>Section</th><th>Name</th><th>Availability</th><th>Diva References</th></tr>';
+    let html = '<table><tr>' + safeColumns.map(c => `<th>${c}</th>`).join('') + '</tr>';
     let hasRows = false;
   
     while (stmt.step()) {
       hasRows = true;
       const row = stmt.getAsObject();
-      html += `<tr><td>${row.section}</td><td>${row.name}</td><td>${row.availability}</td><td>${row.diva_references}</td></tr>`;
+      html += '<tr>' + safeColumns.map(c => `<td>${row[c]}</td>`).join('') + '</tr>';
     }
     stmt.free();
   
@@ -66,10 +67,10 @@ Select your devices and then fill out the form [here](apply-resource).
   
   async function main() {
     await loadDb();
-    getSection("IoT devices");
-    getSection("Hacking tools");
-    getSection("Hardware");
-    getSection("Other");
+    getSection("IoT devices", ["section", "category", "name", "availability", "diva_references"]);
+    getSection("Hacking tools", ["section", "category", "name", "quantity", "availability"]);
+    getSection("Hardware", ["section", "category", "name", "quantity", "availability"]);
+    getSection("Other", ["section", "category", "name", "quantity", "availability"]);
   }
   
   main();
