@@ -11,7 +11,7 @@ If you have a thesis topic and a supervisor, then you can apply for borrowing ou
 Find our IoT devices along with hacking tools below.
 Select your devices and then fill out the form [here](apply-resource).
 
-## Inventory
+## IoT devices
 
 <div id="output"></div>
 
@@ -26,7 +26,7 @@ Select your devices and then fill out the form [here](apply-resource).
     const buffer = await response.arrayBuffer();
     const db = new SQL.Database(new Uint8Array(buffer));
 
-    const result = db.exec('SELECT section, category, name, availability, diva_references FROM resources');
+    const result = db.exec('SELECT section, category, name, availability, diva_references FROM resources WHERE section == "Iot devices"');
 
     const output = document.getElementById('output');
     if (result.length > 0) {
