@@ -1,4 +1,4 @@
-baseURL = 'https://visand-kth.github.io/cybercampus-test/'
+baseURL = 'https://visand-kth.github.io/'
 languageCode = 'en'
 title = 'Royal Hacking Lab'
 theme = 'hugo-book'
