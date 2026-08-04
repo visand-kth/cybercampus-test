@@ -32,33 +32,46 @@ Select your devices and then fill out the form [here](apply-resource).
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.3/sql-wasm.js"></script>
 <script>
 
-  async function getSection(section) {
-    
+  let db;
+  
+  async function loadDb() {
     const SQL = await initSqlJs({
       locateFile: file => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.3/${file}`
     });
-    
     const response = await fetch('resources.db');
     const buffer = await response.arrayBuffer();
-    const db = new SQL.Database(new Uint8Array(buffer));
-
-    const result = db.exec(`SELECT section, name, availability, diva_references FROM resources WHERE section == ${section}`);
-
-    const output = document.getElementById(section);
-    if (result.length > 0) {
-      const { columns, values } = result[0];
-      let html = '<table><tr>' + columns.map(c => `<th>${c}</th>`).join('') + '</tr>';
-      values.forEach(row => {
-        html += '<tr>' + row.map(v => `<td>${v}</td>`).join('') + '</tr>';
-      });
-      html += '</table>';
-      output.innerHTML = html;
-    }
+    db = new SQL.Database(new Uint8Array(buffer));
   }
-
-  getSection("IoT devices");
-  getSection("Hacking tools");
-  getSection("Hardware");
-  getSection("Other");
+  
+  function getSection(section) {
+    const stmt = db.prepare(
+      `SELECT section, name, availability, diva_references FROM resources WHERE section = ?`
+    );
+    stmt.bind([section]);
+  
+    const output = document.getElementById(section);
+    let html = '<table><tr><th>Section</th><th>Name</th><th>Availability</th><th>Diva References</th></tr>';
+    let hasRows = false;
+  
+    while (stmt.step()) {
+      hasRows = true;
+      const row = stmt.getAsObject();
+      html += `<tr><td>${row.section}</td><td>${row.name}</td><td>${row.availability}</td><td>${row.diva_references}</td></tr>`;
+    }
+    stmt.free();
+  
+    html += '</table>';
+    output.innerHTML = hasRows ? html : '<p>No results found.</p>';
+  }
+  
+  async function main() {
+    await loadDb();
+    getSection("IoT devices");
+    getSection("Hacking tools");
+    getSection("Hardware");
+    getSection("Other");
+  }
+  
+  main();
 
 </script>
