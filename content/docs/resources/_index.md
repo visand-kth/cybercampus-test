@@ -26,7 +26,7 @@ Select your devices and then fill out the form [here](apply-resource).
     const buffer = await response.arrayBuffer();
     const db = new SQL.Database(new Uint8Array(buffer));
 
-    const result = db.exec('SELECT section, category, name, availability, diva_references FROM resources WHERE section == "Iot devices"');
+    const result = db.exec('SELECT section, category, name, availability, diva_references FROM resources WHERE section == "IoT devices"');
 
     const output = document.getElementById('output');
     if (result.length > 0) {
