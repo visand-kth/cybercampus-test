@@ -34,13 +34,14 @@ Select your devices and then fill out the form [here](apply-resource).
 
   async function getSection(section) {
     
-    const response = await fetch('resources.db');
-    const buffer = await response.arrayBuffer();
-    const db = new SQL.Database(new Uint8Array(buffer));
-    
     const SQL = await initSqlJs({
       locateFile: file => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.3/${file}`
     });
+    
+    const response = await fetch('resources.db');
+    const buffer = await response.arrayBuffer();
+    const db = new SQL.Database(new Uint8Array(buffer));
+
     const result = db.exec(`SELECT section, name, availability, diva_references FROM resources WHERE section == ${section}`);
 
     const output = document.getElementById(section);
@@ -59,4 +60,5 @@ Select your devices and then fill out the form [here](apply-resource).
   getSection("Hacking tools");
   getSection("Hardware");
   getSection("Other");
+
 </script>
