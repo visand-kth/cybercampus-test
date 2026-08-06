@@ -67,10 +67,10 @@ Select your devices and then fill out the form [here](apply-resource).
   
   async function main() {
     await loadDb();
-    getSection("IoT devices", ["section", "category", "name", "availability", "diva_references"]);
-    getSection("Hacking tools", ["section", "category", "name", "quantity", "availability"]);
-    getSection("Hardware", ["section", "category", "name", "quantity", "availability"]);
-    getSection("Other", ["section", "category", "name", "quantity", "availability"]);
+    getSection("IoT devices", ["category", "name", "availability", "diva_references"]);
+    getSection("Hacking tools", ["category", "name", "quantity", "availability"]);
+    getSection("Hardware", ["category", "name", "quantity", "availability"]);
+    getSection("Other", ["category", "name", "quantity", "availability"]);
   }
   
   main();
